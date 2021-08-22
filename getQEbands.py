@@ -11,6 +11,12 @@
 
 #the x axis of the plot is the distance along the k path, which is stored in the first column of the output
 
+# Note that it's often a good idea to subtract the Fermi energy from the bands.
+# The Fermi energy can be taken from the scf output file.
+
+#example of running script:
+# python3 getQEbands.py bands.out bands.dat
+
 import numpy as np
 import sys
 
